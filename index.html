@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vítor Nery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,200;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5b03ccc37.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./images/vfn_logo_75.png" alt="Logo Vitor F. Nery" />
+      </div>
+      <ul>
+        <li>
+          <a href="https://github.com/vitorfnery" target="_blank">
+            <i class="fa-brands fa-github"></i> github</a
+          >
+        </li>
+        <li>
+          <a href="mailto:vitorfelipenery@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope"></i> e-mail</a
+          >
+        </li>
+        <li>
+          <a href="https://wa.me/0412345678" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i> whatsapp</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Vítor F. Nery</h1>
+          <h5>Front-End Developer</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-sort-down"></i>
+        </div>
+
+        <div style="display: none" id="about">
+          <p>
+            Currently in career transition to become a Front-end Developer. I am
+            a production engineer and currently lead a team of 20 people.
+            Experience in Project Management and Quality. Knowledge in HTML,
+            CSS, JavaScript and Python. I have advanced English with a one year
+            degree taken in England in 2014. My hobbies and main interests are
+            outdoor activities, reading, movies and traveling.
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>please leave your contact!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="enter your e-mail address" />
+            <button>send!</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function displayAbout() {
+        var arrow = window.document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        var display = window.document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
